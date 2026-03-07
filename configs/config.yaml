@@ -1,0 +1,12 @@
+dataset: food101
+num_classes: 101
+
+clip_model: ViT-B-16
+
+batch_size: 32
+epochs: 50
+lr: 1e-4
+
+captions_per_image: 10
+
+device: cuda
