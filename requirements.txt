@@ -1,0 +1,9 @@
+torch
+torchvision
+transformers
+open_clip_torch
+tqdm
+pandas
+scikit-learn
+pillow
+pyyaml
