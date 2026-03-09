@@ -1,9 +1,16 @@
+import sys
+from pathlib import Path
+
 import torch
 import yaml
 from sklearn.metrics import accuracy_score
 from torch.utils.data import DataLoader
 from torchvision.transforms.functional import to_pil_image
 from tqdm import tqdm
+
+ROOT_DIR = Path(__file__).resolve().parents[1]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 
 from captioning.generate_captions import CaptionGenerator
 from datasets.food101_dataset import Food101Dataset
