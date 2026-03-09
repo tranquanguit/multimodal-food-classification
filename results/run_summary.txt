@@ -1,0 +1,14 @@
+Run timestamp (UTC): 2026-03-09T12:44:43Z
+
+Commands executed:
+1) python training/train.py
+   - exit code: 1
+   - output log: results/train_run_output.txt
+
+2) python evaluation/evaluate.py
+   - exit code: 1
+   - output log: results/evaluate_run_output.txt
+
+Observed blocking error in both commands:
+- urllib.error.URLError: <urlopen error [Errno -5] No address associated with hostname>
+- Location: torchvision Food101 dataset download step.
